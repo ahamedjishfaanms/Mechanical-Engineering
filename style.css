@@ -1,82 +1,97 @@
-/* General Styles */
-body, html {
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Body style */
+body {
     font-family: Arial, sans-serif;
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
+    background: url('header-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav {
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
 }
 
-.nav-links {
+.logo h1 {
+    color: white;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
 }
 
-.nav-links a {
-    color: white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.nav-toggle {
+nav ul li a:hover {
+    color: #003285;
+}
+
+/* Menu toggle styles for mobile */
+.menu-toggle {
     display: none;
     flex-direction: column;
-    gap: 0.3rem;
-    background: transparent;
-    border: none;
+    cursor: pointer;
 }
 
-.nav-toggle .hamburger {
-    width: 25px;
+.menu-toggle span {
+    background: white;
     height: 3px;
-    background-color: white;
+    margin: 4px 0;
+    width: 25px;
+    transition: all 0.3s;
 }
 
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Responsive Styles */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .nav-links {
+    nav {
         display: none;
-        flex-direction: column;
-        gap: 0;
-        background-color: #333;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-container.open nav {
+        display: block;
         position: absolute;
-        top: 100%;
+        top: 60px;
         left: 0;
         width: 100%;
+        background: rgba(0, 0, 0, 0.8);
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-container.open nav ul {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .nav-toggle {
-        display: flex;
+    .nav-container.open nav ul li {
+        margin: 10px 0;
     }
 }
