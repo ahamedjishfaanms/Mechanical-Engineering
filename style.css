@@ -95,3 +95,53 @@ nav ul li a:hover {
         margin: 10px 0;
     }
 }
+/* About Section styles */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background: #f0f0f0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #dbe9f4, #a7c9e8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+    max-width: 900px;
+    width: 90%;
+}
+
+.about-content:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 10px;
+    color: #003285;
+}
+
+.about-text p {
+    color: #333;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
