@@ -98,19 +98,20 @@ nav {
     .nav-links {
         display: none;
         flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
     }
 
     .nav-links li {
         margin: 10px 0;
+        text-align: center;
     }
 
     .menu-toggle {
         display: block;
     }
 
-    .menu-toggle.active + .nav-links {
+    .nav-links.active {
         display: flex;
     }
 }
-
-
