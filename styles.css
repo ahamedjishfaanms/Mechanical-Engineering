@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .menu li {
+    margin: 0 10px;
+}
+
+.nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav .menu-toggle {
+        display: block;
+    }
+
+    .nav .menu.active {
+        display: flex;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+    }
+}
