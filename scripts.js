@@ -1,6 +1,4 @@
-const mobileMenu = document.getElementById('mobile-menu');
-const navList = document.querySelector('.nav-list');
+function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('active');
+}
 
-mobileMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-});
