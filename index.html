@@ -3,43 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header with Background Image</title>
+    <title>Responsive Website Template</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>MyWebsite</h1>
+        <img src="header-image.jpg" alt="Header Image" class="header-image">
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about" class="about-section">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>We are a company dedicated to providing the best services to our clients. Our team is committed to excellence and innovation.</p>
-            </div>
-            <div class="about-image">
-                <img src="header.png" alt="About Us">
-            </div>
-        </div>
-    </section>
-
     <script src="script.js"></script>
 </body>
 </html>
-
