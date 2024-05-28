@@ -251,6 +251,10 @@ nav {
         width: 80%;
         margin-bottom: 20px;
     }
+    .full-width-div {
+        flex-direction: column;
+        text-align: center;
+    }
     .embedded-animation {
         width: 100%;
         max-width: 560px;
