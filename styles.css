@@ -253,6 +253,12 @@ nav {
     color: #555;
 }
 
+.read-more {
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Popup styles */
 .popup {
     display: none;
@@ -294,6 +300,13 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+}
+
+.popup-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .popup-btn:hover {
