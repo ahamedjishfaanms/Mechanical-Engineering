@@ -52,45 +52,32 @@
     </div>
     <div class="full-width-div">
         <div class="embedded-animation">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/8b0097f2-1cb9-4ca8-8cd0-1f57a9fa5435/xJuOvfwMrS.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="full-width-text">
-            <h2>Empowering Young Minds: KidAI's Innovative Approach to Education and Research</h2>
-            <p>In today's rapidly evolving world, fostering innovation and nurturing young talent are essential for progress and advancement. At KidAI, we believe in harnessing the potential of bright young minds by offering them unique opportunities to participate in cutting-edge research and development projects. Our initiative aims to identify exceptional students from classrooms worldwide and provide them with a platform to engage in real-world projects, spanning various domains, including robotics automation and other groundbreaking endeavors.
-
-
-
-<P>Identifying Potential 🌱:
-
-Through meticulous observation and data-driven analysis, KidAI identifies promising students who demonstrate exceptional aptitude and passion for technology, science, and innovation. Leveraging advanced algorithms and machine learning techniques, we recognize individuals who exhibit the curiosity, creativity, and problem-solving skills necessary for success in research and development.</P>
-
-
-
-<P>Nurturing Talent 🌟:
-
-Once identified, selected students are invited to join KidAI's Research and Development (R&D) program, where they become integral members of interdisciplinary teams working on exciting projects. Our experienced mentors and educators provide personalized guidance and support, fostering a collaborative environment where young talents can thrive and flourish.</p>
+            <h2>Heading for Full Width Section</h2>
+            <p>Some text that provides additional information about the content in this section.</p>
         </div>
     </div>
 
     <!-- Blog post section -->
     <div class="blog-posts">
-        <div class="blog-post">
-            <img src="header.png" alt="Blog Post Image 1" class="blog-image">
+        <div class="blog-post" onclick="openPopup('blog1')">
+            <img src="blog-image1.jpg" alt="Blog Post Image 1" class="blog-image">
             <div class="blog-content">
                 <h3>Blog Post Title 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque nec justo bibendum fringilla.</p>
             </div>
         </div>
-        <div class="blog-post">
-            <img src="header.png" alt="Blog Post Image 2" class="blog-image">
+        <div class="blog-post" onclick="openPopup('blog2')">
+            <img src="blog-image2.jpg" alt="Blog Post Image 2" class="blog-image">
             <div class="blog-content">
                 <h3>Blog Post Title 2</h3>
                 <p>Phasellus interdum nisl at lacus egestas, nec interdum lacus fermentum. Quisque ut eros magna.</p>
             </div>
         </div>
-        <div class="blog-post">
-            <img src="header.png" alt="Blog Post Image 3" class="blog-image">
+        <div class="blog-post" onclick="openPopup('blog3')">
+            <img src="blog-image3.jpg" alt="Blog Post Image 3" class="blog-image">
             <div class="blog-content">
                 <h3>Blog Post Title 3</h3>
                 <p>Sed ac lorem nec ligula commodo suscipit. Nulla facilisi. Suspendisse potenti. Proin vitae urna quis ligula.</p>
@@ -98,6 +85,19 @@ Once identified, selected students are invited to join KidAI's Research and Deve
         </div>
     </div>
 
+    <!-- Popup structure -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title">Blog Post Title</h3>
+            <p id="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque nec justo bibendum fringilla.</p>
+            <a href="#" class="popup-btn">Read More</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
     <script src="script.js"></script>
 </body>
 </html>
